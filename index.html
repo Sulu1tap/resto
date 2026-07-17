@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maison Verrière — Restaurant gastronomique à Valenciennes</title>
-  <meta name="description" content="Restaurant gastronomique au cœur de Valenciennes. Menus dégustation, occasions spéciales, produits des Hauts-de-France. Réservez votre table en ligne.">
+  <title>Restaurant gastronomique à Valenciennes — Maison Verrière</title>
+  <meta name="description" content="Menus dégustation de saison, produits des Hauts-de-France, 24 couverts au cœur de Valenciennes. Réservez votre table en ligne, confirmation immédiate.">
 
   <!-- Polices : Cormorant Garamond (titres) et Inter (texte) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,10 @@
   <header class="entete">
     <a class="entete-logo" href="#">Maison Verrière</a>
     <nav class="entete-nav" aria-label="Navigation principale">
-      <a href="#benefices">L'expérience</a>
+      <a href="#produits">La maison</a>
+      <a href="#menus">Menus &amp; prix</a>
       <a href="#temoignages">Avis</a>
-      <a href="#reserver">Contact</a>
+      <a href="#acces">Accès</a>
     </nav>
     <a class="bouton bouton-principal entete-bouton" href="#reserver">Réserver ma table</a>
   </header>
@@ -31,22 +32,81 @@
   <main>
 
     <!-- ======================================================
-         SECTION HERO : la promesse + l'appel à l'action
-         Pour changer la photo de fond : voir .hero dans styles.css
+         SECTION HERO
+         Le H1 porte le mot-clé (SEO), l'accroche émotionnelle
+         est affichée en grand juste en dessous.
          ====================================================== -->
     <section class="hero">
       <div class="hero-contenu">
-        <p class="surtitre">Restaurant gastronomique · Valenciennes</p>
-        <h1 class="hero-titre">Les grands soirs ont une adresse à&nbsp;Valenciennes.</h1>
+        <h1 class="surtitre">Restaurant gastronomique au cœur de Valenciennes</h1>
+        <p class="hero-titre">Les grands soirs ont une adresse.</p>
         <p class="hero-soustitre">
-          Une cuisine d'exception, servie sans cérémonie. Ici, pas de protocole :
-          juste une équipe heureuse de vous recevoir, et une assiette qui fait le reste.
+          Une cuisine d'exception servie sans cérémonie, à deux pas de la place d'Armes.
         </p>
         <div class="hero-actions">
           <a class="bouton bouton-principal" href="#reserver">Réserver ma table</a>
-          <a class="bouton bouton-secondaire" href="#benefices">Découvrir l'expérience</a>
+          <a class="bouton bouton-secondaire" href="#menus">Voir les menus</a>
         </div>
         <p class="hero-note">Confirmation immédiate · Ouvert du mardi au samedi, midi et soir</p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         H2 n°1 : la cuisine et le terroir
+         ====================================================== -->
+    <section class="section section-claire" id="produits">
+      <div class="conteneur conteneur-etroit">
+        <p class="surtitre">La maison</p>
+        <h2 class="section-titre">Une table gastronomique, des produits d'ici</h2>
+        <p class="paragraphe">
+          Le chef Antoine Verrière cuisine ce que la région fait de mieux :
+          légumes des maraîchers du Valenciennois, pêche de la côte d'Opale,
+          fromages de l'Avesnois.
+        </p>
+        <p class="paragraphe">
+          La carte est courte et change avec les saisons. C'est le prix d'une
+          promesse simple : rien ne sort de la cuisine qui ne soit au sommet
+          de sa saison.
+        </p>
+        <p class="paragraphe">
+          Vingt-quatre couverts seulement. On ne cherche pas à remplir une
+          salle, on cherche à réussir chaque table.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         H2 n°2 : menus et prix
+         ====================================================== -->
+    <section class="section section-sombre" id="menus">
+      <div class="conteneur">
+        <p class="surtitre">Menus &amp; prix</p>
+        <h2 class="section-titre">Ce qui vous attend dans l'assiette</h2>
+
+        <div class="menus-grille">
+          <article class="menu-carte">
+            <h3 class="menu-nom">Menu du marché</h3>
+            <p class="menu-detail">Au déjeuner · entrée, plat, dessert</p>
+            <p class="menu-prix">45&nbsp;€</p>
+          </article>
+          <article class="menu-carte">
+            <h3 class="menu-nom">Menu dégustation</h3>
+            <p class="menu-detail">En 5 temps · notre cuisine racontée</p>
+            <p class="menu-prix">78&nbsp;€</p>
+          </article>
+          <article class="menu-carte">
+            <h3 class="menu-nom">Menu signature</h3>
+            <p class="menu-detail">En 7 temps · le grand voyage</p>
+            <p class="menu-prix">105&nbsp;€</p>
+          </article>
+        </div>
+
+        <p class="paragraphe paragraphe-sur-sombre">
+          Trois formules, sans surprise sur l'addition. Notre sommelier propose
+          des accords mets et vins sur chaque menu. Végétarien, allergies ?
+          Dites-le en réservant, le chef adapte avec le même soin.
+        </p>
+        <a class="lien-dore" href="#">Voir la carte complète de la saison →</a>
       </div>
     </section>
 
@@ -59,7 +119,6 @@
         <h2 class="section-titre">Bien plus qu'un dîner</h2>
 
         <div class="benefices-grille">
-
           <article class="benefice">
             <h3 class="benefice-titre">Un souvenir, pas seulement un bon repas</h3>
             <p class="benefice-texte">
@@ -67,7 +126,6 @@
               au dernier café. C'est le dîner dont vous reparlerez dans un an.
             </p>
           </article>
-
           <article class="benefice">
             <h3 class="benefice-titre">Votre occasion spéciale, sans y penser</h3>
             <p class="benefice-texte">
@@ -76,7 +134,6 @@
               l'écart — on s'occupe de chaque détail, vous profitez.
             </p>
           </article>
-
           <article class="benefice">
             <h3 class="benefice-titre">La région comme vous ne l'avez jamais goûtée</h3>
             <p class="benefice-texte">
@@ -84,18 +141,13 @@
               vous croyiez connaître, sublimés jusqu'à la surprise.
             </p>
           </article>
-
         </div>
-
-        <p class="benefices-menus">
-          Menu du marché — 45&nbsp;€ &nbsp;·&nbsp; Dégustation en 5 temps — 78&nbsp;€ &nbsp;·&nbsp; Signature en 7 temps — 105&nbsp;€
-        </p>
       </div>
     </section>
 
     <!-- ======================================================
          SECTION TÉMOIGNAGES : 3 avis clients
-         Remplacez ces exemples par de vrais avis (Google, TripAdvisor)
+         Remplacez ces exemples par de vrais avis
          ====================================================== -->
     <section class="section section-sombre" id="temoignages">
       <div class="conteneur">
@@ -103,7 +155,6 @@
         <h2 class="section-titre">Ce que disent nos clients</h2>
 
         <div class="temoignages-grille">
-
           <figure class="temoignage">
             <blockquote class="temoignage-texte">
               « J'ai fait ma demande entre le plat et le dessert. L'équipe avait
@@ -111,7 +162,6 @@
             </blockquote>
             <figcaption class="temoignage-auteur">Julien — via Google</figcaption>
           </figure>
-
           <figure class="temoignage">
             <blockquote class="temoignage-texte">
               « Le pigeon au genièvre est le meilleur plat que j'ai mangé cette
@@ -119,7 +169,6 @@
             </blockquote>
             <figcaption class="temoignage-auteur">Claire — via Google</figcaption>
           </figure>
-
           <figure class="temoignage">
             <blockquote class="temoignage-texte">
               « On est arrivés intimidés, on est repartis comme des habitués.
@@ -127,7 +176,6 @@
             </blockquote>
             <figcaption class="temoignage-auteur">Marc et Sophie — via TripAdvisor</figcaption>
           </figure>
-
         </div>
 
         <p class="temoignages-note">★ 4,8/5 sur 340 avis Google</p>
@@ -135,20 +183,56 @@
     </section>
 
     <!-- ======================================================
-         SECTION FINALE : appel à l'action de contact
+         H2 n°3 : accès et infos pratiques
          ====================================================== -->
-    <section class="section section-claire cta-finale" id="reserver">
+    <section class="section section-claire" id="acces">
+      <div class="conteneur">
+        <p class="surtitre">Infos pratiques</p>
+        <h2 class="section-titre">Où nous trouver à Valenciennes, et comment réserver</h2>
+
+        <div class="infos-grille">
+          <div class="info-bloc">
+            <h3 class="info-titre">L'adresse</h3>
+            <p>
+              12 rue de Famars, en plein centre de Valenciennes. Le parking du
+              centre-ville est à trois minutes à pied, le tramway s'arrête à
+              deux rues.
+            </p>
+          </div>
+          <div class="info-bloc">
+            <h3 class="info-titre">Vous venez de loin ?</h3>
+            <p>
+              De Lille, Douai ou de Belgique, comptez trente à quarante-cinq
+              minutes de route — et une adresse qui vaut le déplacement.
+            </p>
+          </div>
+          <div class="info-bloc">
+            <h3 class="info-titre">Les horaires</h3>
+            <p>
+              Ouvert du mardi au samedi, midi et soir. Pour un vendredi ou
+              samedi soir, réservez une semaine à l'avance — la salle est
+              petite, c'est voulu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION FINALE : appel à l'action
+         ====================================================== -->
+    <section class="section cta-finale" id="reserver">
       <div class="conteneur conteneur-etroit">
         <p class="surtitre">Réservation</p>
         <h2 class="section-titre">Votre table vous attend.</h2>
         <p class="cta-texte">
-          Choisissez votre date, dites-nous l'occasion : la réservation prend
-          trente secondes, la confirmation est immédiate.
+          Anniversaire, tête-à-tête ou simple envie de bien manger : réserver
+          un restaurant gastronomique à Valenciennes prend trente secondes.
+          Choisissez votre date, dites-nous l'occasion, c'est confirmé.
         </p>
         <a class="bouton bouton-principal" href="tel:+33327000000">Réserver ma table</a>
         <p class="cta-telephone">
-          Vous préférez une voix ? Appelez-nous au
-          <a href="tel:+33327000000">03&nbsp;27&nbsp;00&nbsp;00&nbsp;00</a>
+          Vous préférez appeler ? <a href="tel:+33327000000">03&nbsp;27&nbsp;00&nbsp;00&nbsp;00</a>
           — on adore préparer les surprises.
         </p>
       </div>

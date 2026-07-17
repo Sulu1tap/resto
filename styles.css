@@ -217,6 +217,90 @@ img {
   color: var(--texte-clair);
 }
 
+/* ---------- Paragraphes de texte courant ---------- */
+
+.paragraphe {
+  max-width: 620px;
+  margin: 0 auto 20px;
+}
+
+.paragraphe-sur-sombre {
+  margin-top: 48px;
+  color: var(--texte-clair);
+}
+
+/* Lien doré (ex. « Voir la carte complète ») */
+.lien-dore {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--or);
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.lien-dore:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Cartes de menus ---------- */
+
+.menus-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.menu-carte {
+  border: 1px solid rgba(192, 151, 92, 0.35);  /* fin liseré doré */
+  border-radius: 2px;
+  padding: 40px 32px;
+}
+
+.menu-nom {
+  font-family: var(--police-titres);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.menu-detail {
+  font-size: 15px;
+  color: var(--taupe);
+  margin-bottom: 24px;
+}
+
+.menu-prix {
+  font-family: var(--police-titres);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--or);
+}
+
+/* ---------- Blocs d'infos pratiques ---------- */
+
+.infos-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.info-bloc {
+  background: #FFFFFF;
+  padding: 40px 32px;
+  border-radius: 2px;
+  border-top: 2px solid var(--or);
+  font-size: 16px;
+}
+
+.info-titre {
+  font-family: var(--police-titres);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
 /* ---------- Bénéfices ---------- */
 
 .benefices-grille {
@@ -287,6 +371,15 @@ img {
 
 /* ---------- Appel à l'action final ---------- */
 
+/* Fond sombre dégradé, comme le hero : la page se referme
+   sur la même ambiance qu'à l'ouverture. */
+.cta-finale {
+  background:
+    linear-gradient(rgba(28, 25, 23, 0.75), rgba(28, 25, 23, 0.92)),
+    var(--noir-cacao) center / cover no-repeat;
+  color: var(--texte-clair);
+}
+
 .cta-texte {
   max-width: 560px;
   margin: 0 auto 40px;
@@ -315,6 +408,7 @@ img {
   color: var(--texte-clair);
   padding: 64px 0 32px;
   font-size: 15px;
+  border-top: 1px solid rgba(192, 151, 92, 0.3);  /* sépare le pied du CTA sombre */
 }
 
 .pied-grille {
@@ -387,6 +481,8 @@ img {
   /* Les grilles passent en une seule colonne */
   .benefices-grille,
   .temoignages-grille,
+  .menus-grille,
+  .infos-grille,
   .pied-grille {
     grid-template-columns: 1fr;
   }
