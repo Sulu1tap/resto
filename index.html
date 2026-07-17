@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Verrière — Restaurant gastronomique à Valenciennes</title>
+  <meta name="description" content="Restaurant gastronomique au cœur de Valenciennes. Menus dégustation, occasions spéciales, produits des Hauts-de-France. Réservez votre table en ligne.">
+
+  <!-- Polices : Cormorant Garamond (titres) et Inter (texte) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================================================
+       EN-TÊTE : logo + bouton Réserver toujours visible
+       ====================================================== -->
+  <header class="entete">
+    <a class="entete-logo" href="#">Maison Verrière</a>
+    <nav class="entete-nav" aria-label="Navigation principale">
+      <a href="#benefices">L'expérience</a>
+      <a href="#temoignages">Avis</a>
+      <a href="#reserver">Contact</a>
+    </nav>
+    <a class="bouton bouton-principal entete-bouton" href="#reserver">Réserver ma table</a>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         SECTION HERO : la promesse + l'appel à l'action
+         Pour changer la photo de fond : voir .hero dans styles.css
+         ====================================================== -->
+    <section class="hero">
+      <div class="hero-contenu">
+        <p class="surtitre">Restaurant gastronomique · Valenciennes</p>
+        <h1 class="hero-titre">Les grands soirs ont une adresse à&nbsp;Valenciennes.</h1>
+        <p class="hero-soustitre">
+          Une cuisine d'exception, servie sans cérémonie. Ici, pas de protocole :
+          juste une équipe heureuse de vous recevoir, et une assiette qui fait le reste.
+        </p>
+        <div class="hero-actions">
+          <a class="bouton bouton-principal" href="#reserver">Réserver ma table</a>
+          <a class="bouton bouton-secondaire" href="#benefices">Découvrir l'expérience</a>
+        </div>
+        <p class="hero-note">Confirmation immédiate · Ouvert du mardi au samedi, midi et soir</p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION BÉNÉFICES : 3 raisons de venir
+         ====================================================== -->
+    <section class="section section-claire" id="benefices">
+      <div class="conteneur">
+        <p class="surtitre">Ce que vous vivrez chez nous</p>
+        <h2 class="section-titre">Bien plus qu'un dîner</h2>
+
+        <div class="benefices-grille">
+
+          <article class="benefice">
+            <h3 class="benefice-titre">Un souvenir, pas seulement un bon repas</h3>
+            <p class="benefice-texte">
+              Un menu dégustation pensé comme un voyage, du premier amuse-bouche
+              au dernier café. C'est le dîner dont vous reparlerez dans un an.
+            </p>
+          </article>
+
+          <article class="benefice">
+            <h3 class="benefice-titre">Votre occasion spéciale, sans y penser</h3>
+            <p class="benefice-texte">
+              Anniversaire, demande, tête-à-tête : dites-nous tout en réservant.
+              Le dessert personnalisé, le champagne au bon moment, la table à
+              l'écart — on s'occupe de chaque détail, vous profitez.
+            </p>
+          </article>
+
+          <article class="benefice">
+            <h3 class="benefice-titre">La région comme vous ne l'avez jamais goûtée</h3>
+            <p class="benefice-texte">
+              Chaque assiette raconte les Hauts-de-France : des produits que
+              vous croyiez connaître, sublimés jusqu'à la surprise.
+            </p>
+          </article>
+
+        </div>
+
+        <p class="benefices-menus">
+          Menu du marché — 45&nbsp;€ &nbsp;·&nbsp; Dégustation en 5 temps — 78&nbsp;€ &nbsp;·&nbsp; Signature en 7 temps — 105&nbsp;€
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION TÉMOIGNAGES : 3 avis clients
+         Remplacez ces exemples par de vrais avis (Google, TripAdvisor)
+         ====================================================== -->
+    <section class="section section-sombre" id="temoignages">
+      <div class="conteneur">
+        <p class="surtitre">Ils ont vécu leur grand soir ici</p>
+        <h2 class="section-titre">Ce que disent nos clients</h2>
+
+        <div class="temoignages-grille">
+
+          <figure class="temoignage">
+            <blockquote class="temoignage-texte">
+              « J'ai fait ma demande entre le plat et le dessert. L'équipe avait
+              tout préparé, jusqu'à la rose sur la table. Elle a dit oui. »
+            </blockquote>
+            <figcaption class="temoignage-auteur">Julien — via Google</figcaption>
+          </figure>
+
+          <figure class="temoignage">
+            <blockquote class="temoignage-texte">
+              « Le pigeon au genièvre est le meilleur plat que j'ai mangé cette
+              année, et je dîne beaucoup. »
+            </blockquote>
+            <figcaption class="temoignage-auteur">Claire — via Google</figcaption>
+          </figure>
+
+          <figure class="temoignage">
+            <blockquote class="temoignage-texte">
+              « On est arrivés intimidés, on est repartis comme des habitués.
+              Rare, ce niveau de cuisine avec cette chaleur. »
+            </blockquote>
+            <figcaption class="temoignage-auteur">Marc et Sophie — via TripAdvisor</figcaption>
+          </figure>
+
+        </div>
+
+        <p class="temoignages-note">★ 4,8/5 sur 340 avis Google</p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION FINALE : appel à l'action de contact
+         ====================================================== -->
+    <section class="section section-claire cta-finale" id="reserver">
+      <div class="conteneur conteneur-etroit">
+        <p class="surtitre">Réservation</p>
+        <h2 class="section-titre">Votre table vous attend.</h2>
+        <p class="cta-texte">
+          Choisissez votre date, dites-nous l'occasion : la réservation prend
+          trente secondes, la confirmation est immédiate.
+        </p>
+        <a class="bouton bouton-principal" href="tel:+33327000000">Réserver ma table</a>
+        <p class="cta-telephone">
+          Vous préférez une voix ? Appelez-nous au
+          <a href="tel:+33327000000">03&nbsp;27&nbsp;00&nbsp;00&nbsp;00</a>
+          — on adore préparer les surprises.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       PIED DE PAGE : infos pratiques
+       ====================================================== -->
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-logo">Maison Verrière</p>
+        <p>12 rue de Famars<br>59300 Valenciennes</p>
+      </div>
+      <div>
+        <p class="pied-titre">Horaires</p>
+        <p>Du mardi au samedi<br>12h–13h30 · 19h30–21h30</p>
+      </div>
+      <div>
+        <p class="pied-titre">Contact</p>
+        <p>
+          <a href="tel:+33327000000">03 27 00 00 00</a><br>
+          <a href="mailto:contact@maison-verriere.fr">contact@maison-verriere.fr</a>
+        </p>
+      </div>
+    </div>
+    <p class="pied-mentions">© 2026 Maison Verrière — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>

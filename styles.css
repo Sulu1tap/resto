@@ -1,0 +1,397 @@
+/* ==========================================================
+   MAISON VERRIÈRE — Feuille de style
+   Pour changer les couleurs ou les espacements du site,
+   modifiez uniquement les valeurs ci-dessous.
+   ========================================================== */
+
+:root {
+  /* Couleurs (voir STYLE.md) */
+  --noir-cacao: #1C1917;      /* fonds sombres */
+  --ivoire: #F7F3EC;          /* fonds clairs */
+  --or: #C0975C;              /* boutons, liens, accents */
+  --or-clair: #CFA76C;        /* survol des boutons */
+  --texte-sombre: #2B2622;    /* texte sur fond clair */
+  --texte-clair: #EDE7DC;     /* texte sur fond sombre */
+  --taupe: #8A8071;           /* textes secondaires */
+
+  /* Polices */
+  --police-titres: "Cormorant Garamond", Georgia, serif;
+  --police-texte: "Inter", Arial, sans-serif;
+
+  /* Espacements */
+  --espace-section: 112px;    /* entre les sections (desktop) */
+  --largeur-max: 1140px;      /* largeur maximale du contenu */
+}
+
+/* ---------- Base ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--police-texte);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--texte-sombre);
+  background: var(--ivoire);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Conteneur : centre le contenu et limite sa largeur */
+.conteneur {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.conteneur-etroit {
+  max-width: 680px;
+}
+
+/* ---------- Titres et surtitres ---------- */
+
+/* Petit titre doré en majuscules au-dessus des sections */
+.surtitre {
+  font-family: var(--police-texte);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 16px;
+}
+
+.section-titre {
+  font-family: var(--police-titres);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+/* ---------- Boutons ---------- */
+
+.bouton {
+  display: inline-block;
+  font-family: var(--police-texte);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 36px;
+  border-radius: 2px;
+  transition: background 0.2s ease;
+}
+
+/* Bouton doré : un seul par écran */
+.bouton-principal {
+  background: var(--or);
+  color: var(--noir-cacao);
+}
+
+.bouton-principal:hover {
+  background: var(--or-clair);
+}
+
+/* Bouton bordé : pour l'action secondaire */
+.bouton-secondaire {
+  background: transparent;
+  color: var(--texte-clair);
+  border: 1px solid var(--or);
+}
+
+.bouton-secondaire:hover {
+  background: rgba(192, 151, 92, 0.1);
+}
+
+/* ---------- En-tête ---------- */
+
+.entete {
+  position: sticky;          /* le bouton Réserver reste visible en scrollant */
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px;
+  background: var(--noir-cacao);
+}
+
+.entete-logo {
+  font-family: var(--police-titres);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--texte-clair);
+  text-decoration: none;
+}
+
+.entete-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.entete-nav a {
+  color: var(--texte-clair);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.entete-nav a:hover {
+  color: var(--or);
+}
+
+.entete-bouton {
+  padding: 12px 24px;        /* bouton un peu plus compact dans l'en-tête */
+}
+
+/* ---------- Section hero ---------- */
+
+.hero {
+  /* Pour mettre votre photo : remplacez l'adresse ci-dessous
+     par url("images/votre-photo.jpg") — gardez le dégradé sombre
+     devant, il assure la lisibilité du texte. */
+  background:
+    linear-gradient(rgba(28, 25, 23, 0.65), rgba(28, 25, 23, 0.85)),
+    var(--noir-cacao) center / cover no-repeat;
+  color: var(--texte-clair);
+  padding: 160px 24px;
+  text-align: center;
+}
+
+.hero-titre {
+  font-family: var(--police-titres);
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.1;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+
+.hero-soustitre {
+  font-size: 19px;
+  max-width: 620px;
+  margin: 0 auto 40px;
+  color: var(--texte-clair);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-note {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--taupe);
+}
+
+/* ---------- Sections génériques ---------- */
+
+.section {
+  padding: var(--espace-section) 0;
+  text-align: center;
+}
+
+.section-claire {
+  background: var(--ivoire);
+  color: var(--texte-sombre);
+}
+
+.section-sombre {
+  background: var(--noir-cacao);
+  color: var(--texte-clair);
+}
+
+/* ---------- Bénéfices ---------- */
+
+.benefices-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* 3 colonnes sur ordinateur */
+  gap: 24px;
+  text-align: left;
+}
+
+.benefice {
+  background: #FFFFFF;
+  padding: 40px 32px;
+  border-radius: 2px;
+  border-top: 2px solid var(--or);
+}
+
+.benefice-titre {
+  font-family: var(--police-titres);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.benefice-texte {
+  font-size: 16px;
+}
+
+.benefices-menus {
+  margin-top: 48px;
+  font-size: 15px;
+  color: var(--taupe);
+}
+
+/* ---------- Témoignages ---------- */
+
+.temoignages-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.temoignage {
+  border: 1px solid rgba(192, 151, 92, 0.35);  /* fin liseré doré */
+  border-radius: 2px;
+  padding: 40px 32px;
+}
+
+.temoignage-texte {
+  font-family: var(--police-titres);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.temoignage-auteur {
+  font-size: 14px;
+  color: var(--taupe);
+}
+
+.temoignages-note {
+  margin-top: 48px;
+  font-size: 15px;
+  color: var(--or);
+}
+
+/* ---------- Appel à l'action final ---------- */
+
+.cta-texte {
+  max-width: 560px;
+  margin: 0 auto 40px;
+}
+
+.cta-telephone {
+  margin-top: 24px;
+  font-size: 15px;
+  color: var(--taupe);
+}
+
+.cta-telephone a {
+  color: var(--or);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta-telephone a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Pied de page ---------- */
+
+.pied {
+  background: var(--noir-cacao);
+  color: var(--texte-clair);
+  padding: 64px 0 32px;
+  font-size: 15px;
+}
+
+.pied-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.pied-logo {
+  font-family: var(--police-titres);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pied-titre {
+  font-weight: 500;
+  color: var(--or);
+  margin-bottom: 8px;
+}
+
+.pied a {
+  color: var(--texte-clair);
+  text-decoration: none;
+}
+
+.pied a:hover {
+  color: var(--or);
+}
+
+.pied-mentions {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 13px;
+  color: var(--taupe);
+}
+
+/* ==========================================================
+   VERSION MOBILE (écrans de moins de 800 px de large)
+   ========================================================== */
+
+@media (max-width: 800px) {
+
+  :root {
+    --espace-section: 64px;   /* sections plus rapprochées sur mobile */
+  }
+
+  /* La navigation centrale est masquée sur mobile :
+     le logo et le bouton Réserver suffisent. */
+  .entete-nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 96px 24px;
+  }
+
+  .hero-titre {
+    font-size: 36px;
+  }
+
+  .hero-soustitre {
+    font-size: 17px;
+  }
+
+  .section-titre {
+    font-size: 28px;
+  }
+
+  /* Les grilles passent en une seule colonne */
+  .benefices-grille,
+  .temoignages-grille,
+  .pied-grille {
+    grid-template-columns: 1fr;
+  }
+
+  .pied-grille {
+    text-align: center;
+  }
+}
